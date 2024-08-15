@@ -1,18 +1,14 @@
-
-import 'package:calc_app/presentation/widgets/custom_botton.dart';
-import 'package:calc_app/presentation/widgets/custom_text_field.dart';
+import 'package:calc_app/core/widgets/custom_botton.dart';
+import 'package:calc_app/core/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class BottomSheetBody extends StatelessWidget {
-  const BottomSheetBody({
-    super.key,
-  });
-
+class BottomSheetBodyProduction extends StatelessWidget {
+   BottomSheetBodyProduction({super.key});
+  GlobalKey<FormState> formKey = GlobalKey();
+    AutovalidateMode autovalidateMode = AutovalidateMode.disabled;
   @override
   Widget build(BuildContext context) {
-    final GlobalKey<FormState> formKey = GlobalKey();
-    AutovalidateMode autovalidateMode = AutovalidateMode.disabled;
     return Form(
       autovalidateMode: autovalidateMode,
       child: SizedBox(
@@ -22,12 +18,30 @@ class BottomSheetBody extends StatelessWidget {
           padding: EdgeInsets.only(top: 10.h),
           child: Column(
             children: [
+              SizedBox(height: 30.h,),
               SizedBox(
                 width: 360.w,
                 child: const CustomTextField(
-                  hint: "اسم الصنف",
+                  hint: "كمية الإنتاج"  ,
                 ),
               ),
+              SizedBox(height: 20.h,),
+              SizedBox(
+                width: 360.w,
+                child: const CustomTextField(
+                  hint: "التاريخ ",
+                  keyboardType: TextInputType.datetime,
+                ),
+              ),
+              SizedBox(height: 20.h,),
+
+              SizedBox(
+                width: 360.w,
+                child: const CustomTextField(
+                  hint: "الوزن",
+                ),
+              ),
+              
               SizedBox(
                 height: 20.h,
               ),
@@ -35,7 +49,7 @@ class BottomSheetBody extends StatelessWidget {
                 width: 360.w,
                 child: const CustomTextField(
                   keyboardType: TextInputType.number,
-                  hint: "الكمية",
+                  hint: "الملاحظات",
                 ),
               ),
               SizedBox(

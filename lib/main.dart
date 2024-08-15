@@ -1,13 +1,13 @@
 
 
-import 'package:calc_app/domain/model/our_model.dart';
+import 'package:calc_app/Features/home/domain/model/our_model.dart';
 import 'package:calc_app/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'presentation/pages/home_page.dart';
+import 'Features/home/presentation/pages/home_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

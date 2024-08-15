@@ -1,7 +1,7 @@
 import 'dart:developer';
 
-import 'package:calc_app/presentation/pages/detailes.dart';
-import 'package:calc_app/presentation/pages/prodaction.dart';
+import 'package:calc_app/Features/home/presentation/pages/detailes.dart';
+import 'package:calc_app/Features/Production/presentation/pages/prodaction.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 
