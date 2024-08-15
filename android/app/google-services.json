@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "710061719815",
+    "firebase_url": "https://calculation-8a378-default-rtdb.firebaseio.com",
+    "project_id": "calculation-8a378",
+    "storage_bucket": "calculation-8a378.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710061719815:android:8026992345e0d30ab105a2",
+        "android_client_info": {
+          "package_name": "com.example.calc_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjakXzhHUi4QSA-iKshcNZW3j12YEN0Uo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
